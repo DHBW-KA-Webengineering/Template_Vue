@@ -42,4 +42,4 @@ npm run lint
 
 Deploy works automatically with each push to github pages. The template is deployed to [dhbw-ka-webengineering.github.io/Template_Vue/](https://dhbw-ka-webengineering.github.io/Template_Vue/)
 
-Because of the _Template_Vue_ path in the URL, `publicPath: process.env.NODE_ENV === 'production' ? '/Template_Vue/' : '/',` is required in line 2 of the [vue.config.js file](vue.config.js). If you deploy the repo to a different URL, you will need to adapt or remove this part.
+Because of the _Template_Vue_ path in the URL, `base: process.env.NODE_ENV === 'production' ? '/Template_Vue/' : '/',` is required in line 17 of the [vite.config.ts file](vite.config.ts). If you deploy the repo to a different URL, you will need to adapt or remove this part.
